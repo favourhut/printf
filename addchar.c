@@ -8,5 +8,5 @@
 
 	int _addchar(char c)
 {
-	return write(1, &c, 1);
+	return (write(1, &c, 1));
 }

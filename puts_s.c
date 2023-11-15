@@ -2,6 +2,7 @@
 
 /**
  * puts_s - his prints strings
+ * @c: character to string
  * Return: number of byte
  */
 
