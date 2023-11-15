@@ -6,7 +6,7 @@
  * Return: 0 on succes
  */
 
-int _prinf(const char *format, ...)
+int _printf(const char *format, ...)
 {
 	unsigned int a;
 	unsigned int set = 0;
