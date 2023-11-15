@@ -13,7 +13,7 @@ int puts_s(char *c)
 	{
 		for (its = 0; c[its] != '\0'; its++)
 		{
-			addchar(c[its]);
+			_addchar(c[its]);
 		}
 	}
 	return (its);

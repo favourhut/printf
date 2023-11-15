@@ -23,12 +23,12 @@ int _printf(const char *format, ...)
 	{
 		if (format[a] != '%')
 		{
-			addchar(format[a]);
+			_addchar(format[a]);
 		}
 
 		else if (format[a] == '%' && format[a + 1] == 'c')
 		{
-			addchar(va_arg(fav, int));
+			_addchar(va_arg(fav, int));
 			a++;
 		}
 		else if (format[a] == '%' && format[a + 1] == 's')
@@ -39,7 +39,7 @@ int _printf(const char *format, ...)
 		}
 		else if (format[a + 1] == '%')
 		{
-			addchar('%');
+			_addchar('%');
 		}
 
 		set += 1;

@@ -6,7 +6,7 @@
  * Return: 1 on success
  */
 
-int addchar(char c)
+	int _addchar(char c)
 {
 	return write(1, &c, 1);
 }
