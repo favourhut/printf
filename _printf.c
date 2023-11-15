@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 	va_list fav;
 
 	if (!format || (format[0] == '%' && format[1] == '\0'))
-                 return (-1);
+		return (-1);
 
 	va_start(fav, format);
 
@@ -35,7 +35,7 @@ int _printf(const char *format, ...)
 		{
 			str_set = puts_s(va_arg(fav, char *));
 			a++;
-			set =+ (str_set - 1);
+			set = +(str_set - 1);
 		}
 		else if (format[a + 1] == '%')
 		{
@@ -46,4 +46,4 @@ int _printf(const char *format, ...)
 	}
 	va_end(fav);
 	return (set);
-}	
+}
